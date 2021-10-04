@@ -37,7 +37,7 @@
     }
 
     .nav__list {
-        padding-left: 15px;
+        padding-left: 30px;
     }
 }
 
@@ -116,7 +116,7 @@ h3 { font-size: var(--fs-h3) }
 
 .nav__list {
     margin: 0px;
-    padding: 5px 0px 5px 30px;
+    padding: 5px 0px 5px 15px;
 }
 
 .nav__item {
