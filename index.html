@@ -1,150 +1,119 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-<style>
-	body {
-		font-family: monospace;
-		background-color: white;
-		margin-right: 100px;
-		font-size: 25px;
-		line-height: 30px;
-	}
-	#myName {
-		font-family: 'Days One', monospace; 
-		font-size: 80px; 
-		text-align: right;
-		position: relative;
-		bottom: 80px;
-	}
-	p {
-		text-align: justify;
-		font-size: 20px;
-	}
-	footer {
-		text-align: right;
-		font-size: 15px;
-	}
-	.display-image {
-		position: relative;
-		top: 50px;
-		left: 80px;
-		width: 400px;
-		border-radius: 50%;
-		border-color: silver;
-		border-style: solid;
-		border-width: 5px;
-	}
-	.logos {
-		width: 20px;
-		margin-right: 10px;
-	}
-	.logos:hover {
-		width: 25px;
-	}
-	#navbar {
-		position: fixed;
-		top: 0;
-		right: 100px;
-		background-color: silver;
-		font-size: 20px;
-	}
-	nav ul {
-		margin: 0;
-		padding: 5px 0 15px 30px;
-	}
-	nav li {
-		display: inline;
-		margin-right: 20px;
-	}
-	@media (max-width: 1000px) {
-		body {
-			margin-right: 50px;
-			font-size: 20px
-		}
-		#myName {
-			font-size: 60px;
-			text-align: right;
-
-		}
-		#navbar {
-			right: 60px;
-			font-size: 15px;
-		}
-		.display-image {
-			position: relative;
-			width: 200px;
-			top: 0px;
-			left: 0px;
-		}
-		footer {
-			font-size: 12px;
-		}
-	}
-</style>
 <html>
-<head>
-	<nav id="navbar">
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#interests">Interests</a></li>
-			<li><a href="#hobbies">Hobbies</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-		</ul>
-	</nav>
-	<dir id="home">
-		<img class="display-image" src="https://avatars.githubusercontent.com/u/56784514?v=4" alt="Abinash Chetia">
-	</dir>
-</head>
-<body>
-	<dir>
-		<h1 id="myName">Abinash Chetia</h1>
-		<p>Hi! My name is Abinash Chetia. I am presently pursuing my Bachelor of Technology degree in Computer Science and Engineering from Dibrugarh University Institute of Engineering and Technology (DUIET), Assam, India.</p>
-		<hr>
-		<dir id="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>C</li>
-				<li>C++</li>
-				<li>Python</li>
-				<li>Linux</li>
-				<li>VSCode</li>
-				<li>Scilab</li>
-				<li>Octave</li>
-				<li>LaTex</li>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Abinash Chetia Portfolio Website</title>
+
+
+
+	</head>
+	<body>
+		<header>
+
+			<div class="logo">
+				<img src="#" alt="my logo">
+			</div>
+
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+					<li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Hi, I am <strong>Abinash Chetia</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Student</p>
+			<img src="#" alt="my pic" class="intro__img">
+		</section>
+
+		<section class="my-skills" id="skills">
+			<h2 class="section__title section__title--skills">
+				What I am capable of
+			</h2>
+			<div class="skills">
+				<div class="skill">
+					C/C++ Programming
+					<p>About my skill</p>
+				</div>
+
+				<div class="skill">
+					Python Programming
+					<p>About my skill</p>
+				</div>
+
+				<div class="skill">
+					Web Developement
+					<p>About my skill</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="my-projects" id="projects">
+			<h2 class="section__title section__title--projects">
+				My work
+			</h2>
+			<div class="projects">
+				<div class="project">
+					<a href="#" class="project--link">
+						<img src="#" alt="project 1 snapshot">
+						<h3>Pong Game</h3>
+						<p>A simple pong game made in python.</p>
+					</a>
+				</div>
+
+				<div class="project">
+					<a href="#" class="project--link">
+						<img src="#" alt="project 2 snapshot">
+						<h3>Student Auto Grading System</h3>
+						<p>A C++ console program to grade students based on their scores.</p>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">
+				Who I am
+			</h2>
+			<p class="section__subtitle section__subtitle--about">
+				Presently a student
+			</p>
+			<div class="about-me__body">
+				<p>1st para</p>
+				<p>2nd para</p>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<a href="mailto:abinashdu2000@gmail.com" class="footer__link">abinashdu2000@gmail.com</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="#">
+						<img src="#" alt="twitter-logo">
+					</a>
+				</li>
+
+				<li class="social-list__item">
+					<a class="social-list__link" href="#">
+						<img src="#" alt="github-logo">
+					</a>
+				</li>
+
+				<li class="social-list__item">
+					<a class="social-list__link" href="#">
+						<img src="#" alt="instagram-logo">
+					</a>
+				</li>
 			</ul>
-		</dir>
-		<hr>
-		<dir id="interests">
-			<h2>Interests</h2>
-			<ul>
-				<li>Artificial Intelligence</li>
-				<li>Robotics</li>
-				<li>Drones</li>
-			</ul>
-		</dir>
-		<hr>
-		<dir id="hobbies">
-			<h2>Hobbies</h2>
-			<ul>
-				<li>DIY</li>
-				<li>Listening music</li>
-				<li>Cycling</li>
-			</ul>
-		</dir>
-		<hr>
-		<dir id="contact">
-			<h2>Contact Me</h2>
-				<a href="https://twitter.com/TheAbinashC" target="_blank"><img class="logos" src="https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/NP0mN50RPyj.png"></a>
-				<a href="https://github.com/AbinashChetia" target="_blank"><img class="logos" src="https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/BpBzEEFm09p.png"></a>
-				<a href="https://instagram.com/theabinashchetia" target="_blank"><img class="logos" src="https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/22ubiF2Af05.png"></a>
-				<a href="https://linkedin.com/in/abinash-chetia-b33280190" target="_blank"><img class="logos" src="https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/ludpfCQk0ZT.png"></a>
-		</dir>
-		<hr>
-	</dir>
-</body>
-<footer>This website is written in HTML and some CSS by <a href="https://github.com/AbinashChetia" target="_blank">Abinash Chetia</a> and still in developement.</footer>
+		</footer>
+
+	</body>
 </html>
