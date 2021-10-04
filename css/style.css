@@ -35,6 +35,10 @@
         right: 0px;
         font-size: var(--fs-h3);
     }
+
+    .nav__list {
+        padding-left: 15px;
+    }
 }
 
 body {
