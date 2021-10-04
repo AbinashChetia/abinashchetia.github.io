@@ -28,6 +28,10 @@
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
+
+    .nav {
+        font-size: var(--fs-h3);
+    }
 }
 
 body {
@@ -101,8 +105,6 @@ h3 { font-size: var(--fs-h3) }
     right: 0px;
     background: var(--clr-accent);
     color: var(--clr-dark);
-    text-align: center;
-    font-size: var(--fs-h3);
 }
 
 .nav__list {
