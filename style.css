@@ -2,7 +2,8 @@
     --clr-white: #f0f0f0;
     --clr-cyan: #47ffff;
     --clr-grey: #303841;
-    --clr-highlight: #5c5a64;
+    --clr-light-grey: #5c5a64;
+    --clr-orange: rgb(255, 204, 62);
 }
 
 * {
@@ -112,7 +113,7 @@ img {
 
 .nav-list a:hover {
     color: var(--clr-white);
-    background: var(--clr-highlight);
+    background: var(--clr-light-grey);
 }
 
 .welcome-section {
@@ -181,7 +182,7 @@ img {
 }
 
 .project:hover .code {
-    color: var(--clr-cyan);
+    color: var(--clr-orange);
 }
 
 .project-image {
@@ -204,11 +205,11 @@ img {
 .btn-show-all {
     font-size: 2rem;
     background: var(--clr-grey);
-    transition: background 0.3s ease-out;
+    transition: color 0.3s ease-out;
 }
 
 .btn-show-all:hover {
-    background: var(--clr-highlight);
+    color: var(--clr-orange);
 }
 
 .btn-show-all > i {
