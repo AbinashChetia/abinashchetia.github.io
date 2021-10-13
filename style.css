@@ -128,7 +128,7 @@ img {
 }
 
 .welcome-section > p {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     font-style: italic;
     color: var(--clr-cyan);
