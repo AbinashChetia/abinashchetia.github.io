@@ -278,6 +278,10 @@ footer > p {
     margin: 2rem;
 }
 
+footer > p > a:hover {
+    color: var(--clr-cyan);
+}
+
 @media (max-width: 28.75em) {
     footer {
         flex-direction: column;
