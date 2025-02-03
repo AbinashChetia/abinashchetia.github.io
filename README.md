@@ -12,3 +12,4 @@ https://abinashchetia.github.io/
     - [ ] Research Interests
     - [ ] Skills 
     - [ ] Projects
+- [ ] Make navigation bar pinned at top
