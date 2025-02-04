@@ -8,7 +8,7 @@ https://abinashchetia.github.io/
 
 ## TODO
 - [ ] Add sections
-    - [ ] Experience
+    - [+] Experience
     - [ ] Research Interests
     - [ ] Skills 
     - [ ] Projects
