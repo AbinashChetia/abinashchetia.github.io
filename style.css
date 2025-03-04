@@ -1,3 +1,16 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: Poppins, monospace, Arial, sans-serif;
     margin: 0;
@@ -14,7 +27,6 @@ header {
     color: white;
     padding: 20px;
     font-size: 24px;
-    /* border: 2px solid #333; Added border */
 }
 
 nav {
@@ -23,7 +35,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid #333; /* Added border */
+    border: 2px solid #333;
 }
 
 nav a {
@@ -35,9 +47,8 @@ nav a {
 section {
     padding: 20px;
     flex: 1;
-    /* border: 2px solid #333; Added border */
-    border-left: 2px solid #333; /* Left border */
-    border-right: 2px solid #333; /* Right border */
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
 }
 
 .container {
@@ -47,21 +58,33 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid #333; Added border */
 }
 
-.content-row {
+.timeline {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
-.content-box {
+.timeline-item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.timeline-duration {
     flex: 1;
-    min-width: 250px;
-    padding: 10px;
-    border: 1px solid #333; /* Added border */
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.timeline-content {
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 2px solid #333;
 }
 
 .profile-img {
@@ -69,7 +92,7 @@ section {
     height: 150px;
     border-radius: 50%;
     margin-top: 20px;
-    border: 2px solid #333; /* Added border */
+    border: 2px solid #333;
 }
 
 footer {
@@ -78,7 +101,6 @@ footer {
     padding: 10px;
     width: 100%;
     margin-top: auto;
-    /* border: 2px solid #333; Added border */
 }
 
 hr {
@@ -106,5 +128,18 @@ hr {
     }
     .container {
         padding: 10px;
+    }
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .timeline-duration {
+        text-align: left;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .timeline-content {
+        padding-left: 0;
+        border-left: none;
     }
 }
