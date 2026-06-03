@@ -1,101 +1,332 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abinash Chetia</title>
-    <link rel="icon" type="image/png" href="assets/ac.png">
+    <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>Abinash Chetia</header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            [>|<]
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+
+            <button id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
     </nav>
-    <section class="container">
-        <img src="media/AC_2024.jpg" alt="Image of Abinash Chetia" class="profile-img">
-        <h2 id="about">About Me</h2>
-        <p>Hi! I’m Abinash, a CS engineer and an ardent ML researcher.</p>
-        <hr>
-        
-        <h2 id="education">Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-duration">July 2023 - July 2025</div>
-                <div class="timeline-content">
-                    <div class="degree">M.Tech. in Machine Learning & Computing</div>
-                    <div class="institute">Indian Institute of Space Science & Technology, Thiruvananthapuram, India</div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-duration">August 2019 - June 2023</div>
-                <div class="timeline-content">
-                    <div class="degree">B.Tech. in Computer Science & Engineering</div>
-                    <div class="institute">Dibrugarh University Institute of Engineering and Technology, Dibrugarh, India</div>
-                </div>
-            </div>
-        </div>
-        <hr>
-        
-        <h2 id="experience">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-duration">June 2024 - April 2025</div>
-                <div class="timeline-content">
-                    <div class="designation">Computer Vision Intern</div>
-                    <div class="company">Continental Automotive (India) Pvt. Ltd., Bengaluru, India</div>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-duration">May 2022 - June 2022</div>
-                <div class="timeline-content">
-                    <div class="designation">Summer Research Intern</div>
-                    <div class="company">International Institute of Information Technology, Hyderabad, India</div>
-                </div>
-            </div>
-        </div>
-        <hr>
 
-        <h2 id="skills">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">C</div>
-            <div class="skill-item">C++</div>
-            <div class="skill-item">Python</div>
-            <div class="skill-item">PyTorch</div>
-            <div class="skill-item">TensorFlow</div>
-            <div class="skill-item">Gradio</div>
-            <div class="skill-item">Scikit-learn</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">MIPS Assembly</div>
-            <div class="skill-item">HTML</div>
-            <div class="skill-item">CSS</div>
-            <div class="skill-item">LaTeX</div>
-        </div>
-        <hr>
 
-        <h2 id="projects">Projects</h2>
-        To be added soon...
-        <hr>
-        
-        <h2 id="contact">Contact</h2>
-        <div class="contact-icons">
-            <a href="mailto:abinashdu2000@gmail.com"><img src="assets/icons/envelope-solid.svg" alt="Email Icon" class="contact-icon"></a>
-            <a href="https://github.com/AbinashChetia" target="_blank"><img src="assets/icons/github-brands.svg" alt="GitHub Icon" class="contact-icon"></a>
-            <a href="https://x.com/TheAbinashC" target="_blank"><img src="assets/icons/x-twitter-brands.svg" alt="X Icon" class="contact-icon"></a>
-            <a href="https://www.linkedin.com/in/abinash-chetia-b33280190" target="_blank"><img src="assets/icons/linkedin-brands.svg" alt="LinkedIn Icon" class="contact-icon"></a>
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-image">
+
+            <img src="assets/dp.png" alt="Display Picture">
+
         </div>
+
+        <div class="hero-content">
+
+            <h1>Abinash Chetia</h1>
+
+            <h2>
+                Machine Learning Engineer &
+                Computer Vision Researcher
+            </h2>
+
+            <p>
+                M.Tech in Machine Learning and Computing<br>
+                Indian Institute of Space Science and Technology
+            </p>
+
+            <div class="hero-tags">
+
+                <span>Computer Vision</span>
+                <span>Multimodal AI</span>
+                <span>Vision-Language Models</span>
+                <span>Graph Learning</span>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://www.github.com/AbinashChetia" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="www.linkedin.com/in/abinash-chetia-b33280190" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:abinashdu2000@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+
+            <p>
+                Hi, I'm Abinash. I've completed my Master's in Machine Learning and Computing from IIST, Thiruvananthapuram, and I'm passionate about exploring different areas of AI, especially computer vision, multimodal learning and embodied intelligence. Over the years, I've worked on projects ranging from object tracking and vehicle re-identification to driver behavior understanding and scene understanding for autonomous systems. I enjoy diving into new ideas, experimenting with research problems and building practical solutions that connect theory with real-world applications. Outside of academics and research, I'm always curious to learn something new and enjoy meaningful conversations about technology, science and nature.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="card">
+            <h3>M.Tech in Machine Learning and Computing</h3>
+            <h4>Indian Institute of Space Science and Technology (IIST)</h4>
+            <h5>July 2023 - July 2025</h5>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <h4>Dibrugarh University Institute of Engineering and Technology (DUIET)</h4>
+            <h5>Aug 2019 - June 2023</h5>
+        </div>
+
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="card">
+            <h3>Research Fellow</h3>
+            <h4>Centre for Visual Information Technology (CVIT), IIIT Hyderabad</h4>
+            <h5>Aug 2025 - June 2026</h5>
+            <p>
+                Worked on a large-scale egocentric two-wheeler dataset in Indian context.
+            </p>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <h3>Computer Vision Intern</h3>
+            <h4>Continental Automotive (India) Pvt. Ltd.</h4>
+            <h5>June 2024 - June 2025</h5>
+            <p>
+                Worked on the perception modules of a digital twin of smart vehicle parking management system, multi-camera object tracking and scene understanding.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <span class="skill">C/C++</span>
+            <span class="skill">Python</span>
+            <span class="skill">PyTorch</span>
+            <span class="skill">TensorFlow</span>
+            <span class="skill">OpenCV</span>
+            <span class="skill">Transformers</span>
+            <span class="skill">YOLO</span>
+            <span class="skill">ROS</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Git</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TIMELINE ================= -->
+
+    <section id="timeline">
+
+        <h2 class="section-title">
+            Journey So Far
+        </h2>
+
+        <div class="timeline-container">
+
+            <div class="timeline-card">
+                <h3>2019</h3>
+                <p>Joined DUIET for B.Tech</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>2023</h3>
+                <p>Completed B.Tech and joined IIST for M.Tech</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>2024</h3>
+                <p>Joined Aumovio (then Continental Automotive) as Computer Vision Intern, in M.Tech 2nd year</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>2025</h3>
+                <p>Completed M.Tech and joined CVIT, IIIT Hyderabad as Research Fellow</p>
+            </div>
+
+            <div class="timeline-card">
+                <h3>Future</h3>
+                <p>PhD, Research, Job, Life</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="card">
+                <h3>Yet to be added...</h3>
+                <p>
+                    Yet to be added...
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+
+    <section id="publications">
+
+        <h2 class="section-title">
+            Publications
+        </h2>
+
+        <div class="card">
+            <h3>
+                Abnormality Detection in Financial Transactions Using Graph Representation Learning
+            </h3>
+            <p>
+                International Conference on Data Analytics and Insights, ICDAI 2023
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <!-- <section>
+
+        <h2 class="section-title">
+            Achievements
+        </h2>
+
+        <div class="card">
+
+            <ul>
+                <li>
+                    Let me ponder upon the achievements and add them here soon...
+                </li>
+            </ul>
+
+        </div>
+
+    </section> -->
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            Contact
+        </h2>
+
+        <div class="card">
+
+            <p>Email: abinashdu2000@gmail.com</p>
+
+            <p>GitHub: github.com/AbinashChetia</p>
+
+            <p>LinkedIn: linkedin.com/in/abinash-chetia-b33280190</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        &copy; 2025 Abinash Chetia. All rights reserved.
+
+        <p>
+            &copy; 2026 Abinash Chetia
+        </p>
+
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
