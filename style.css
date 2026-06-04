@@ -454,6 +454,26 @@ li{
 }
 
 /* ===========================
+   PUBLICATION LINKS
+=========================== */
+
+.publication-links{
+    display:flex;
+    gap:20px;
+    margin-top:15px;
+}
+
+.publication-links a{
+    font-size:1.3rem;
+    color:var(--text-color);
+    transition:0.3s;
+}
+
+.publication-links a:hover{
+    color:var(--accent-color);
+}
+
+/* ===========================
    FOOTER
 =========================== */
 
